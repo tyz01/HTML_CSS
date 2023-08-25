@@ -37,7 +37,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
 }
 
 .publication {
@@ -47,17 +46,24 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-.publication-image-first {
-    width: 200px;
-    height: 350px;
-}
-
-.text,
-.publication-image {
+.text {
+padding-right: 20px;
+padding-left: 20px;
     flex: 1;
     box-sizing: border-box;
 }
 
+.publication-image {
+  width: 30%;
+  height: auto;
+  display: block;
+  }
+
+.publication-image-first {
+    width: 50%;
+    height: auto;
+    display: block;
+}
 .publication:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -153,6 +159,7 @@ body {
   font-size: 18px;
   margin-top: 10px;
 }
+
 .title-gallery {
   text-align: center;
 }
