@@ -15,6 +15,7 @@ body {
 }
 
 .header-left {
+padding-left: 20px;
     display: flex;
     align-items: center;
 }
@@ -47,10 +48,12 @@ body {
 }
 
 .text {
-padding-right: 20px;
-padding-left: 20px;
-    flex: 1;
-    box-sizing: border-box;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: none;
+  flex: 1;
+  box-sizing: border-box;
 }
 
 .publication-image {
@@ -64,8 +67,19 @@ padding-left: 20px;
     height: auto;
     display: block;
 }
+
 .publication:nth-child(even) {
     flex-direction: row-reverse;
+}
+
+.start-button {
+ background-color: transparent;
+  border: 2px solid #333;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .menu {
@@ -96,9 +110,13 @@ padding-left: 20px;
    }
 
   .text {
-    width: 250px;
-    height: 200px;
-  }
+    padding-left: 40px;
+  width: 350px;
+    height: 400px;
+    flex-direction: column;
+    padding-bottom: 10px;
+ }
+
     .publication:nth-child(even) {
         flex-direction: column;
     }
@@ -111,15 +129,28 @@ padding-left: 20px;
    }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) and (max-width: 850px) {
   .text {
   padding-left: 40px;
     width: 350px;
     height: 400px;
   }
+
+  .publication-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    }
+
+  .publication-image-first {
+      width: 50%;
+      height: auto;
+      display: block;
+  }
 }
 
 .image-gallery {
+padding-left: 20px;
   display: flex;
 }
 
