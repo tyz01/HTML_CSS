@@ -69,7 +69,7 @@ body {
 }
 
 .publication:nth-child(even) {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .start-button {
@@ -98,12 +98,12 @@ body {
   }
 
 .header {
-     border-bottom: none;
+   border-bottom: none;
 }
 
 .header-left {
-display: block;
-}
+  display: block;
+ }
     .publication {
         flex-direction: column;
          border-bottom: 0px;
@@ -159,7 +159,7 @@ display: block;
 }
 
 .image-gallery {
-padding-left: 20px;
+  padding-left: 20px;
   display: flex;
 }
 
